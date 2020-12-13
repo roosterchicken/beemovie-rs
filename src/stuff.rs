@@ -1,5 +1,4 @@
 use rand::seq::SliceRandom;
-
 pub fn multiply_sentences(num: i32, vector: Vec::<String>) -> String {
     let mut string: String = String::from("");
     let mut globalnum: i32 = num;
@@ -47,13 +46,3 @@ pub fn paragraph(mut num: i32, vec1: Vec::<String>) -> String {
     }
     return pog
 }
-
-/*
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
-*/

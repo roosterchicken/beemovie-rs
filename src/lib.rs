@@ -1,4 +1,4 @@
-extern crate beemovie_internal;
+mod stuff;
 pub fn sentence(num: i32) -> String {
     let script = script();
     let mut split: Vec<&str> = script.split(".").collect();
@@ -8,7 +8,7 @@ pub fn sentence(num: i32) -> String {
     for item in &split {
         vector.push(item.to_string());
     }
-    return beemovie_internal::multiply_sentences(num, vector);
+    return stuff::multiply_sentences(num, vector);
 }
 
 pub fn script() -> String {
@@ -24,7 +24,7 @@ pub fn word(num: i32) -> String {
     for item in &split {
         vector.push(item.to_string());
     }
-    return beemovie_internal::multiply_words(num, vector);
+    return stuff::multiply_words(num, vector);
 }
 
 pub fn paragraph(num: i32) -> String {
@@ -39,7 +39,7 @@ pub fn paragraph(num: i32) -> String {
     for item in &split {
         vector.push(item.to_string());
     }
-    return beemovie_internal::paragraph(num, vector);
+    return stuff::paragraph(num, vector);
 }
 
 #[cfg(test)]
