@@ -1,0 +1,13 @@
+[package]
+name = "beemovie"
+version = "0.1.0"
+authors = ["Rooster <roosterchicken@protonmail.ch>"]
+edition = "2018"
+description = "Bee Movie crate."
+repository = "https://github.com/roosterchicken/beemovie-rs"
+keywords = ["barry", "benson", "Bee Movie", "beemovie", "generator", "text"]
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+beemovie-internal = { path = "beemovie-internal" }
