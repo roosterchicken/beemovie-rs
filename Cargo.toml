@@ -10,4 +10,4 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-beemovie-internal = { path = "beemovie-internal" }
+beemovie-internal = { version = "0.1.0", path = "beemovie-internal" }
