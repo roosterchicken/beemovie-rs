@@ -1,6 +1,6 @@
 [package]
 name = "beemovie"
-version = "0.1.2"
+version = "0.1.3"
 authors = ["Rooster <roosterchicken@protonmail.ch>"]
 edition = "2018"
 description = "Bee Movie crate."
