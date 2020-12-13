@@ -3,12 +3,14 @@ pub fn multiply_sentences(num: i32, vector: Vec::<String>) -> String {
     let mut string: String = String::from("");
     let mut globalnum: i32 = num;
     while globalnum > 0 {
+        //println!("{}", globalnum);
         if num == 1 {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = pog.to_string() + ".";
+            string = string + &pog.to_string() + ".";
         } else {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = pog.to_string() + "." + " ";
+            string = string + &pog.to_string() + "." + " ";
+            //println!("{}", string);
         }
         globalnum = globalnum - 1;
     }
@@ -22,10 +24,10 @@ pub fn multiply_words(num: i32, vector: Vec::<String>) -> String {
     while globalnum > 0 {
         if num == 1 {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = pog.to_string();
+            string = string + &pog.to_string();
         } else {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = pog.to_string() + " ";
+            string = string + &pog.to_string() + " ";
         }
         globalnum = globalnum - 1;
     }

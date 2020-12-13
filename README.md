@@ -3,7 +3,7 @@ Bee Movie crate.
 # Usage
 Put this in your Cargo.toml
 ```toml
-beemovie = '0.1.3'
+beemovie = '0.1.4'
 ```
 # Documentation
 ## sentence()
@@ -11,7 +11,7 @@ This function returns a sentence or two from the bee movie.
 ```rust
 extern crate beemovie;
 fn main() {
-    println!("{}", beemovie::sentence(1));
+    println!("Sentence: {}", beemovie::sentence(1));
 }
 ```
 ## script()
@@ -19,7 +19,7 @@ This function returns the entire Bee Movie script.
 ```rust
 extern crate beemovie;
 fn main() {
-    println!("Sentence: {}", beemovie::script());
+    println!("{}", beemovie::script());
 }
 ```
 ## word()
@@ -35,6 +35,6 @@ This function returns a paragraph from the Bee Movie.
 ```rust
 extern crate beemovie;
 fn main() {
-    println!("Sentence: {}", beemovie::paragraph(1));
+    println!("Paragraph: {}", beemovie::paragraph(1));
 }
 ```
