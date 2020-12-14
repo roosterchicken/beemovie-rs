@@ -6,10 +6,11 @@ pub fn multiply_sentences(num: i32, vector: Vec::<String>) -> String {
         //println!("{}", globalnum);
         if num == 1 {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = string + &pog.to_string() + ".";
+            string = format!("{}{}.", string, pog);
         } else {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
             string = string + &pog.to_string() + "." + " ";
+            string = format!("{}{}. ", string, pog);
             //println!("{}", string);
         }
         globalnum = globalnum - 1;
@@ -24,10 +25,10 @@ pub fn multiply_words(num: i32, vector: Vec::<String>) -> String {
     while globalnum > 0 {
         if num == 1 {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = string + &pog.to_string();
+            string = format!("{}{}", string, pog);
         } else {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = string + &pog.to_string() + " ";
+            string = format!("{}{} ", string, pog);
         }
         globalnum = globalnum - 1;
     }
