@@ -9,8 +9,7 @@ pub fn multiply_sentences(num: i32, vector: Vec::<String>) -> String {
             string = format!("{}{}.", string, pog);
         } else {
             let pog = vector.choose(&mut rand::thread_rng()).unwrap();
-            string = string + &pog.to_string() + "." + " ";
-            string = format!("{}{}. ", string, pog);
+            string = format!("{}{}.", string, pog);
             //println!("{}", string);
         }
         globalnum = globalnum - 1;
