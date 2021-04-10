@@ -3,7 +3,7 @@ Bee Movie crate.
 # Usage
 Put this in your Cargo.toml
 ```toml
-beemovie = '0.2.3'
+beemovie = '1.0.0'
 ```
 # Documentation
 ## sentence()
