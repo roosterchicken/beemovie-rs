@@ -1,6 +1,6 @@
 [package]
 name = "beemovie"
-version = "0.2.2"
+version = "0.2.3"
 authors = ["Rooster <roosterchicken@protonmail.ch>"]
 edition = "2018"
 description = "Bee Movie crate."
@@ -10,4 +10,4 @@ license = "MIT"
 readme = "README.md"
 
 [dependencies]
-rand = "0.7.3"
+rand = "0.8.3"
