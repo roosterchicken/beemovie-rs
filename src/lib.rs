@@ -46,7 +46,7 @@ pub fn paragraph(num: i32) -> String {
 }
 
 pub fn version() -> String {
-    "0.2.3".to_string()
+    "1.0.1".to_string()
 }
 
 #[cfg(test)]
