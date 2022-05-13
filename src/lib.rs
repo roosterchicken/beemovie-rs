@@ -10,21 +10,21 @@ pub fn sentence(num: i32) -> String {
     split.retain(|&str| str != ". ");
     split.retain(|&str| !str.is_empty());
     split.retain(|&str| str != " ");
-    let mut vector = Vec::<String>::new();
+    let mut vector = Vec::<&str>::new();
     for item in &split {
-        vector.push(item.to_string());
+        vector.push(item);
     }
     stuff::multiply_sentences(num, vector)
 }
 
 pub fn word(num: i32) -> String {
-    let mut script = script();
+    let mut script = script().to_owned();
     script = script.replace(&['.', '?', '!', '?', ','][..], "");
     let mut split: Vec<&str> = script.split(' ').collect();
     split.retain(|&str| !str.is_empty());
-    let mut vector = Vec::<String>::new();
+    let mut vector = Vec::<&str>::new();
     for item in &split {
-        vector.push(item.to_string());
+        vector.push(item);
     }
     stuff::multiply_words(num, vector)
 }
@@ -38,9 +38,9 @@ pub fn paragraph(num: i32) -> String {
     split.retain(|&str| str != ". ");
     split.retain(|&str| !str.is_empty());
     split.retain(|&str| str != " ");
-    let mut vector = Vec::<String>::new();
+    let mut vector = Vec::<&str>::new();
     for item in &split {
-        vector.push(item.to_string());
+        vector.push(item);
     }
     stuff::paragraph(num, vector)
 }

@@ -1,5 +1,5 @@
 use rand::seq::SliceRandom;
-pub fn multiply_sentences(num: i32, vector: Vec<String>) -> String {
+pub fn multiply_sentences(num: i32, vector: Vec<&str>) -> String {
     let mut string: String = String::from("");
     let mut globalnum: i32 = num;
     while globalnum > 0 {
@@ -12,7 +12,7 @@ pub fn multiply_sentences(num: i32, vector: Vec<String>) -> String {
     poggers.to_string()
 }
 
-pub fn multiply_words(num: i32, vector: Vec<String>) -> String {
+pub fn multiply_words(num: i32, vector: Vec<&str>) -> String {
     let mut string: String = String::from("");
     let mut globalnum: i32 = num;
     while globalnum > 0 {
@@ -29,7 +29,7 @@ pub fn multiply_words(num: i32, vector: Vec<String>) -> String {
     poggers.to_string()
 }
 
-pub fn paragraph(mut num: i32, vec1: Vec<String>) -> String {
+pub fn paragraph(mut num: i32, vec1: Vec<&str>) -> String {
     let mut pog: String = String::from("");
     while num > 0 {
         let number = vec![3, 4, 5];
